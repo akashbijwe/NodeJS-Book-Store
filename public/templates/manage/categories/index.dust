@@ -1,0 +1,30 @@
+{>"layouts/manage" /}
+
+{<body}
+  <div class="row">
+    <h2>categories</h2>
+    <a href="/manage/categories/add" class="btn btn-success">Add Categories</a>
+      <br>
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {#categories}
+          <tr>
+            <th scope="row">{._id}</th>
+            <td>{.name}</td>
+            <td>
+              <a href="/manage/categories/edit/{._id}" class="btn btn-sm btn-primary">Edit</a>
+              <a href="javascript: void(0)" class="btn btn-sm btn-danger removeCategories">Delete</a>
+            </td>
+          </tr>
+        {/categories}
+      </tbody>
+    </table>
+  </div>
+{/body}

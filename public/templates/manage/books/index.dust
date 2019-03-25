@@ -1,0 +1,32 @@
+{>"layouts/manage" /}
+
+{<body}
+  <div class="row">
+    <h2>Books</h2>
+    <a href="/manage/books/add" class="btn btn-success">Add Book</a>
+    <br>
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Title</th>
+          <th scope="col">Category</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {#books}
+          <tr>
+            <th scope="row">{._id}</th>
+            <td>{.title}</td>
+            <td>{.category}</td>
+            <td>
+              <a href="/manage/books/edit/{._id}" class="btn btn-sm btn-primary">Edit</a>
+              <a href="javascript: void(0)" class="btn btn-sm btn-danger removeBook" data-id="{._id}">Delete</a>
+            </td>
+          </tr>
+        {/books}
+      </tbody>
+    </table>
+  </div>
+{/body}

@@ -1,0 +1,7 @@
+{>"layouts/manage" /}
+
+{<body}
+  <div class="row">
+    Manage Page
+  </div>
+{/body}

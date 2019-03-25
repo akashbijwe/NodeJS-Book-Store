@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>{+title /}</title>
+  <link rel="stylesheet" href="/css/app.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">TekBook</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/cart">Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/manage">Manage</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="row">
+    <div class="container">
+      {messages|s}
+      {+body /}
+    </div>
+  </div>
+
+  <script data-main="/js/app" src="/components/requirejs/require.js"></script>
+  <script src="/js/vendors/jquery-3.3.1.js"></script>
+  <!-- <script src="/js/vendors/bootstrap.min.js"></script> -->
+  <script src="/js/main.js"></script>
+
+  <script>
+
+  </script>
+</body>
+
+</html>

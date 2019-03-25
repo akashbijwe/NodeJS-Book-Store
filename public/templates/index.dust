@@ -1,0 +1,22 @@
+{>"layouts/master" /}
+
+{<body}
+  <div class="row">
+    {#books}
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body">
+            <h4> {.title} </h4>
+            <p>
+              {.description}
+            </p>
+            <div class="price">
+              Buy it for <b>{.price}</b>
+            </div>
+            <a href='/books/details/{.id}' class="card-link">Details</a>
+          </div>
+        </div>
+      </div>
+    {/books}
+  </div>
+{/body}

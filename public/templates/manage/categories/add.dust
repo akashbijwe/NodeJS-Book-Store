@@ -1,0 +1,18 @@
+{>"layouts/manage" /}
+
+{<body}
+  <h2>Add Categories </h2>
+  <form method="post" action="/manage/categories/add">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <input type="text" class="form-control" name="name" placeholder="Name">
+        </div>
+        <input type="hidden" name="_csrf" value="{_csrf}">
+        <div class="form-group">
+          <input type="submit" value="Submit" class="btn btn-primary">
+        </div>
+      </div>
+    </div>
+  </form>
+{/body}
